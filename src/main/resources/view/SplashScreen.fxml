@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="380.0" prefWidth="244.0" style="-fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenFormController">
+   <children>
+      <FlowPane alignment="CENTER" layoutY="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/loding.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+      <VBox alignment="CENTER" layoutY="256.0" spacing="20.0" style="-fx-background-color: #F7F7E1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/text.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" spacing="20.0">
+                     <children>
+                        <Label text="DEP-9 Text Editor">
+                           <font>
+                              <Font name="Ubuntu" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblStatus" text="Loading...">
+                           <font>
+                              <Font name="Ubuntu" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label text="Copyright 2022 DEP9. All Rights Reserved">
+               <font>
+                  <Font name="Ubuntu" size="10.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="NE_RESIZE" />
+         </cursor>
+      </VBox>
+   </children>
+</AnchorPane>
