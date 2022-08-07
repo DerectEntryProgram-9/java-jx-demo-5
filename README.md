@@ -7,3 +7,5 @@ A simple Java FX application about splash screen, Text-Editor screen and about s
 ### License
 Copyright &copy; 2022 DEP9. All Rights Reserved.
 This project is licensed  under the [MIT License](LICENSE.txt).
+
+![](asset/text-editor.png)
