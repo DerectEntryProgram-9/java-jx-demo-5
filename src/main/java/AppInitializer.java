@@ -23,7 +23,7 @@ public class AppInitializer extends Application {
         Scene splashScene = new Scene(splashContainer);
         splashScene.setFill(Color.TRANSPARENT);  // Transparent the scene
 //        Stage stage = new Stage(StageStyle.TRANSPARENT);  // StageStyle.TRANSPARENT  // Also we can use this
-        primaryStage.setScene(splashScene);
+        primaryStage.setScene(splashScene); // Set scene to stage
         primaryStage.initStyle(StageStyle.TRANSPARENT);  // Title bar transparent
         primaryStage.centerOnScreen();
         primaryStage.show();
